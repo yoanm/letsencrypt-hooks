@@ -3,8 +3,12 @@ set -e
 # Available vars 
 # $RENEWED_DOMAINS (Ex: "test.domain.tld" or "test.domain.tld test2.domain.tld ...")
 # $RENEWED_LINEAGE (Ex: "/etc/letsencrypt/live/test.domain.tld"
+#
+# Script will move private and public key to a shared folder, files will be managed by https://github.com/yoanm/update-qnap-certificate
+
 QNAP_DOMAIN='XXXXXXX.YYYYYYY.ZZZZZZ'
 # Be sure to set proper permissions to the folder, private key is unprotected !
+# Use "uid=0,gid=0,file_mode=0700,dir_mode=0700" as fstab config param for the directory in order to allow root user only
 QNAP_SHARED_FOLDER='/mnt/Nas/Certbot/'
 
 CERTIFICATE_DIRECTORY=$RENEWED_LINEAGE

@@ -9,7 +9,7 @@ set -e
 
 # Update the following based on your needs (at least update router ip and domain)
 ## If presents in domain list, routerOs will be updated with the newly created certificates
-ROUTEROS_DOMAIN="XXXXXX.YYYYYYY.ZZZZZZ"
+ROUTEROS_DOMAIN="router.domain.tld"
 ## RouterOs ip for ssh/scp
 ROUTEROS_IP=A.B.C.D
 ## RouterOs username for ssh/scp

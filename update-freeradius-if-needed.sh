@@ -6,6 +6,7 @@ set -e
 #
 # Script will move private and public key to freeradius config directory and restart it
 
+# Update the following based on your needs (at least update the domain)
 TARGET_DOMAIN='XXXXXX.YYYYYY.ZZZZZ'
 FREERADIUS_CERTIFICATE_FOLDER='/etc/freeradius/3.0/certs'
 

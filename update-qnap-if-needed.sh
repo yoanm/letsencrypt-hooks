@@ -6,6 +6,7 @@ set -e
 #
 # Script will move private and public key to a shared folder, files will be managed by https://github.com/yoanm/update-qnap-certificate
 
+# Update the following based on your needs (at least update the domain)
 QNAP_DOMAIN='XXXXXXX.YYYYYYY.ZZZZZZ'
 # Be sure to set proper permissions to the folder, private key is unprotected !
 # Use "uid=0,gid=0,file_mode=0700,dir_mode=0700" as fstab config param for the directory in order to allow root user only
